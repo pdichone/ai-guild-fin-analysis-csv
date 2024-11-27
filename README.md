@@ -1,3 +1,5 @@
+<!-- @format -->
+
 # Financial Data Analysis Tool
 
 A powerful Python-based application for analyzing financial and business data through interactive visualizations, AI-powered insights, and automated reporting.
@@ -14,10 +16,12 @@ A powerful Python-based application for analyzing financial and business data th
 ## Prerequisites
 
 1. **Python Environment**
+
    - Python 3.8 or higher
    - pip package manager
 
 2. **OpenAI API Key**
+
    - Required for default GPT-4 model
    - Get it from [OpenAI Platform](https://platform.openai.com)
 
@@ -28,23 +32,27 @@ A powerful Python-based application for analyzing financial and business data th
 ## Installation
 
 1. **Clone the repository**
+
    ```bash
-   git clone https://github.com/yourusername/financial-data-analysis.git
+   git clone https://github.com/pdichone/ai-guild-fin-analysis-csv.git
    cd financial-data-analysis
    ```
 
 2. **Install dependencies**
+
    ```bash
    pip install -r requirements.txt
    ```
 
 3. **Set up environment variables**
+
    ```bash
    cp .env.example .env
    # Edit .env and add your OpenAI API key
    ```
 
 4. **Install Ollama (Optional, for local Llama2)**
+
    ```bash
    # macOS or Linux
    curl https://ollama.ai/install.sh | sh
@@ -61,16 +69,19 @@ A powerful Python-based application for analyzing financial and business data th
 ## Usage
 
 1. **Start the application**
+
    ```bash
    streamlit run app.py
    ```
 
 2. **Upload CSV files**
+
    - Click "Browse files" button
    - Select one or more CSV files
    - Wait for processing to complete
 
 3. **Explore visualizations**
+
    - View time series plots
    - Analyze category distributions
    - Compare monthly trends
@@ -104,11 +115,13 @@ financial-data-analysis/
 ## Data Format Requirements
 
 ### CSV Structure
+
 - Must include at least one date column
 - Must include numeric columns for analysis
 - Optional categorical columns for grouping
 
 ### Example Format
+
 ```csv
 date,amount,category,type
 2023-01-15,5000.00,Sales,revenue
@@ -116,11 +129,14 @@ date,amount,category,type
 ```
 
 ### Column Types
+
 1. **Date Columns**
+
    - ISO format (YYYY-MM-DD)
    - Consistent formatting
 
 2. **Numeric Columns**
+
    - Decimal numbers
    - No currency symbols
    - Percentages as decimals
@@ -133,24 +149,28 @@ date,amount,category,type
 ## Features in Detail
 
 ### 1. Data Processing
+
 - Automatic type inference
 - Missing value handling
 - Data validation
 - Aggregation management
 
 ### 2. Visualizations
+
 - Time series analysis
 - Category distributions
 - Monthly comparisons
 - Interactive charts
 
 ### 3. AI Integration
+
 - Natural language processing
 - Context-aware responses
 - Multi-model support
 - Automated insights
 
 ### 4. Report Generation
+
 - PDF format
 - Executive summaries
 - Key metrics
@@ -159,11 +179,13 @@ date,amount,category,type
 ## Model Options
 
 ### 1. OpenAI GPT-4 (Default)
+
 - Requires API key
 - Cloud-based processing
 - Best for complex analysis
 
 ### 2. Local Llama2 (Optional)
+
 - Runs locally
 - No API key needed
 - Privacy-focused option
@@ -171,12 +193,14 @@ date,amount,category,type
 ## Performance Optimization
 
 1. **Data Management**
+
 - Batch processing
 - Efficient storage
 - Memory optimization
 - Cache management
 
 2. **Query Processing**
+
 - Indexed searches
 - Result caching
 - Parallel processing
@@ -185,12 +209,14 @@ date,amount,category,type
 ## Security
 
 1. **API Security**
+
 - Secure key storage
 - Regular rotation
 - Access control
 - Rate limiting
 
 2. **Data Privacy**
+
 - Local processing
 - No external storage
 - Session isolation
@@ -201,15 +227,19 @@ date,amount,category,type
 ### Common Issues
 
 1. **Database Connection**
+
    ```
    ValueError: Could not connect to tenant default_tenant
    ```
+
    Solution: Reset the database using the "Reset Database" button
 
 2. **Model Switching**
+
    ```
    Error: Failed to switch model
    ```
+
    Solution: Ensure Ollama is running for local models
 
 3. **CSV Processing**
@@ -221,6 +251,7 @@ date,amount,category,type
 ### Best Practices
 
 1. **Data Preparation**
+
    - Clean data before upload
    - Verify column formats
    - Remove duplicates
@@ -254,6 +285,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ## Support
 
 For support, please:
+
 1. Check the documentation
 2. Search existing issues
 3. Create a new issue if needed
