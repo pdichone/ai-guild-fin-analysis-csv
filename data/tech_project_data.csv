@@ -1,0 +1,21 @@
+date,project_id,project_name,task_type,assigned_team,hours_spent,completion_percentage,budget_allocated,budget_spent,priority_level,status
+2023-01-10,P100,Cloud Migration,Planning,Architecture,45,100,50000,48000,High,Completed
+2023-01-15,P100,Cloud Migration,Development,Backend,120,85,75000,68000,High,In Progress
+2023-01-20,P100,Cloud Migration,Testing,QA,60,90,25000,22000,High,In Progress
+2023-01-25,P101,Mobile App v2,Design,UI/UX,80,100,30000,29000,Medium,Completed
+2023-02-01,P101,Mobile App v2,Development,Mobile,160,75,100000,82000,Medium,In Progress
+2023-02-05,P101,Mobile App v2,Testing,QA,40,60,20000,15000,Medium,In Progress
+2023-02-10,P102,Security Audit,Analysis,Security,90,100,45000,44000,Critical,Completed
+2023-02-15,P102,Security Audit,Implementation,DevOps,100,80,55000,48000,Critical,In Progress
+2023-02-20,P102,Security Audit,Testing,Security,50,70,25000,20000,Critical,In Progress
+2023-03-01,P103,AI Integration,Research,Data Science,120,100,80000,79000,High,Completed
+2023-03-05,P103,AI Integration,Development,ML Engineers,200,65,150000,110000,High,In Progress
+2023-03-10,P103,AI Integration,Testing,QA,70,40,30000,15000,High,In Progress
+2023-03-15,P104,Database Optimization,Analysis,DBA,60,100,40000,38000,Medium,Completed
+2023-03-20,P104,Database Optimization,Implementation,Backend,140,85,90000,82000,Medium,In Progress
+2023-03-25,P104,Database Optimization,Testing,QA,45,60,20000,14000,Medium,In Progress
+2023-04-01,P105,Web Platform Redesign,Design,UI/UX,100,100,60000,58000,High,Completed
+2023-04-05,P105,Web Platform Redesign,Development,Frontend,180,70,120000,95000,High,In Progress
+2023-04-10,P105,Web Platform Redesign,Testing,QA,55,45,25000,15000,High,In Progress
+2023-04-15,P106,API Gateway,Planning,Architecture,40,100,35000,34000,Critical,Completed
+2023-04-20,P106,API Gateway,Development,Backend,150,55,95000,65000,Critical,In Progress

@@ -1,0 +1,21 @@
+date,transaction_id,product_category,product_name,quantity,unit_price,total_amount,payment_method,customer_segment,store_location,promotion_applied
+2023-01-05,T1001,Electronics,4K Smart TV,2,799.99,1599.98,Credit Card,Premium,New York,Yes
+2023-01-05,T1002,Home & Garden,Indoor Plants,5,24.99,124.95,Cash,Regular,New York,No
+2023-01-06,T1003,Electronics,Wireless Earbuds,3,129.99,389.97,PayPal,Regular,Los Angeles,Yes
+2023-01-07,T1004,Fashion,Designer Handbag,1,299.99,299.99,Credit Card,Premium,Chicago,No
+2023-01-08,T1005,Home & Garden,Garden Tools Set,2,89.99,179.98,Debit Card,Regular,Boston,Yes
+2023-01-09,T1006,Electronics,Laptop,4,1299.99,5199.96,Credit Card,Business,San Francisco,Yes
+2023-01-10,T1007,Fashion,Running Shoes,3,79.99,239.97,Cash,Regular,Miami,No
+2023-01-15,T1008,Electronics,Smartphone,5,699.99,3499.95,Credit Card,Premium,Seattle,Yes
+2023-01-16,T1009,Home & Garden,Patio Furniture,1,599.99,599.99,PayPal,Premium,Houston,Yes
+2023-01-17,T1010,Fashion,Winter Coat,2,149.99,299.98,Debit Card,Regular,Chicago,No
+2023-02-01,T1011,Electronics,Gaming Console,3,499.99,1499.97,Credit Card,Regular,Los Angeles,Yes
+2023-02-02,T1012,Home & Garden,Smart Thermostat,4,199.99,799.96,PayPal,Premium,New York,No
+2023-02-03,T1013,Fashion,Luxury Watch,1,999.99,999.99,Credit Card,Premium,Miami,Yes
+2023-02-04,T1014,Electronics,Tablet,6,399.99,2399.94,Cash,Business,San Francisco,Yes
+2023-02-05,T1015,Home & Garden,Robot Vacuum,2,299.99,599.98,Credit Card,Regular,Boston,No
+2023-03-10,T1016,Fashion,Designer Sunglasses,4,159.99,639.96,PayPal,Premium,Seattle,Yes
+2023-03-11,T1017,Electronics,Smart Speaker,5,89.99,449.95,Debit Card,Regular,Houston,No
+2023-03-12,T1018,Home & Garden,Kitchen Appliance,3,249.99,749.97,Credit Card,Business,Chicago,Yes
+2023-03-13,T1019,Fashion,Premium Jeans,7,79.99,559.93,Cash,Regular,New York,No
+2023-03-14,T1020,Electronics,Digital Camera,2,599.99,1199.98,Credit Card,Premium,Los Angeles,Yes

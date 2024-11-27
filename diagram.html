@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <style>
+        body { margin: 20px; }
+        .diagram { max-width: 1200px; margin: 0 auto; }
+    </style>
+</head>
+<body>
+    <div class="diagram">
+        <div class="mermaid">
+        graph TB
+            %% Data Input Layer
+            subgraph Input
+                CSV[CSV Files]
+                UI[Streamlit UI]
+            end
+
+            %% Core Processing Layer
+            subgraph Core ["Core Processing"]
+                DP[Data Processor]
+                DE[Data Embedder]
+                VIS[Visualizer]
+            end
+
+            %% Storage Layer
+            subgraph Storage
+                DB[(ChromaDB)]
+                CACHE[Cache]
+            end
+
+            %% AI Layer
+            subgraph AI ["AI Models"]
+                MM[Model Manager]
+                GPT[OpenAI GPT-4]
+                LLAMA[Local Llama2]
+                CH[Conversation Handler]
+            end
+
+            %% Output Layer
+            subgraph Output
+                PLOTS[Interactive Plots]
+                INSIGHTS[AI Insights]
+                REPORT[PDF Reports]
+            end
+
+            %% Connections
+            CSV --> UI
+            UI --> DP
+            UI --> DE
+            UI --> VIS
+
+            DP --> DB
+            DE --> DB
+            DB --> CH
+
+            MM --> GPT
+            MM --> LLAMA
+            CH --> MM
+
+            VIS --> PLOTS
+            CH --> INSIGHTS
+            CH --> REPORT
+
+            %% Styling
+            classDef input fill:#4a9eff,stroke:#666,stroke-width:2px,color:#fff
+            classDef core fill:#ff9e4a,stroke:#666,stroke-width:2px,color:#fff
+            classDef storage fill:#4aff9e,stroke:#666,stroke-width:2px,color:#fff
+            classDef ai fill:#ff4a9e,stroke:#666,stroke-width:2px,color:#fff
+            classDef output fill:#9e4aff,stroke:#666,stroke-width:2px,color:#fff
+
+            class CSV,UI input
+            class DP,DE,VIS core
+            class DB,CACHE storage
+            class MM,GPT,LLAMA,CH ai
+            class PLOTS,INSIGHTS,REPORT output
+        </div>
+    </div>
+    <script>
+        mermaid.initialize({
+            theme: 'default',
+            securityLevel: 'loose',
+            flowchart: {
+                useMaxWidth: true,
+                htmlLabels: true,
+                curve: 'basis'
+            }
+        });
+    </script>
+</body>
+</html>
